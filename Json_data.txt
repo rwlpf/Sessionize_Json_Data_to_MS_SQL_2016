@@ -1,0 +1,1382 @@
+{
+  "sessions": [
+    {
+      "id": "117469",
+      "title": "DAX Gotchas",
+      "description": "DAX is a very powerful and expressive language, but during my journey of learning it, I discovered several quirks that took me awhile to get my head around.\r\n\r\nFor example, the FILTER function does not create a new filter context but a row context. The ROW function is executed in a filter context without creating a row context. How does that make sense?\r\n\r\nAnd then we have that CALCULATE function. First you guess that you need it to put it around your SUM and AVERAGE functions in order to perform those aggregations. Then you realize that it does not do anything! But is this then always true?\r\n\r\nTo demystify these and all the other DAX Gotchas that I bumped into is the goal of this session.\r\n\r\nOnce you have killed them all, then you will start to live life to the DAX!\r\n\r\nAgenda\r\n- Overview of my DAX Gotchas lab environment\r\n- Catch gotchas\r\n- SUMMARIZE\r\n",
+      "startsAt": "2019-09-13T09:30:00",
+      "endsAt": "2019-09-13T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "775695c6-be3a-43a3-94f4-bdc676f2740c"
+      ],
+      "categoryItems": [
+        6593
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "117517",
+      "title": "Benchmarking in the cloud",
+      "description": "Lifting and shifting your application to the cloud is extremely easy, on paper. The hard truth is that the only way to know for sure how it is going to perform is to test it. Benchmarking on premises is hard enough, but benchmarking in the cloud can get really hairy because of the restrictions in PaaS environments and the lack of tooling.\r\nJoin me in this session and learn how to capture a production workload, replay it to your cloud database and compare the performance. I will introduce you to the methodology and the tools to bring your database to the cloud without breaking a sweat.\r\nWith WorkloadTools, benchmarking will be as easy as pie.",
+      "startsAt": "2019-09-13T09:30:00",
+      "endsAt": "2019-09-13T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "6e90961f-ef22-4221-acbf-36e48f914604"
+      ],
+      "categoryItems": [
+        6601,
+        10749,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "82085",
+      "title": "Applying DevOps practices to Machine Learning",
+      "description": "DevOps practices range from continuous integration to continuous delivery from ensuring production is always online or easy to rollback to measuring all the things, from ensuring code and knowledge get shared to having a loosely coupled architecture and of course much more.\r\n\r\nHow do we actually get that to work with Machine Learning? And why should you care?\r\nFirst of all, it turns out that any (non-) data scientist can actually be of value in the lifecycle of a machine learning solution. But more importantly, it turns out that by using the knowledge and experience from the community, it's actually possible to transform the way you deliver your machine learning solutions to the end user. It turns out it's even possible to do this much faster than ever before.\r\n\r\nIn this session, you'll be guided through a solution that uses DevOps practices to help you overcome classic issues with delivering machine learning solutions. Come for the buzzwords, stay because this is what you've always wanted in your organisation!",
+      "startsAt": "2019-09-13T09:30:00",
+      "endsAt": "2019-09-13T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "dacb6c13-e2a1-4f37-aa4a-2d3ceef99dae"
+      ],
+      "categoryItems": [
+        6596,
+        6598
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "82318",
+      "title": "Azure SQL Managed Instance - Experiencies from the Field",
+      "description": "In this session you will learn the best practices, tips and tricks on how to successfully use Azure SQL Managed Instance  on production environments. You will learn how to monitor, configure, restore, backup, VNET, NGS, created a replication environment, etc for Azure SQL Managed Instance. These learnings are fruit of Microsoft CSS support cases, and customer field engagements. This session includes several demos.",
+      "startsAt": "2019-09-13T09:30:00",
+      "endsAt": "2019-09-13T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "94191e58-ec8a-4b91-a9ad-45154b3cd26d",
+        "1d3ed1e2-e349-4b52-b90c-e6d57ca5c1d7"
+      ],
+      "categoryItems": [
+        10749,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    },
+    {
+      "id": "82501",
+      "title": "Crazy Data Science",
+      "description": "Data is the most valuable asset to any company right now and you can gain a corporate advantage through the insights your data can provide. However, implementing Advanced Analytics can also lead to very....interesting....results.\r\n\r\nRemember that algorithm that named paint colors? That's nothing compared to what you are going to witness in this session. From analyzing demonic possession based on selfies, to analyzing how \"metal\" a song is. In this session, presented by mad data scientists Tomaž Kaštrun and Enrico van de Laar, we will explore all the crazy things that are possible with data science. And who knows? You might even learn a thing or two!",
+      "startsAt": "2019-09-13T09:30:00",
+      "endsAt": "2019-09-13T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "b64d5a6e-8a32-41fb-bfa5-a1467c5f67d0"
+      ],
+      "categoryItems": [
+        6599
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "115105",
+      "title": "Multi-server agent jobs administration with happy faces and pigeons",
+      "description": "This talk will be about multi-server administration using MSX and TSX servers. Built-in feature you may have seen, but was too scared to play with. Will show you how to configure multi-server environment and how to manage it with least possible resources.\r\n\r\nWhat SQL Server and pigeons have in common? Not much, besides that you do not want to be a pigeon - pigeon post to be specific.  \r\nI have been a DBA pigeon in my past. Managing hundreds of SQL Servers and visiting every single SQL Agent to setup the maintenance jobs, backup jobs or any jobs that would help me to keep the servers up and running. Sometimes using SQL scripts, other times Powershell scripts to deploy or update new jobs, but it was still the same ol' way. Flying between instances like a bird. Until, one day, I found out about MSX and TSX! And now my life is full of happy faces! I want your face to be happy too.\r\n\r\nIn this session you will learn how easy is to setup this hidden and forgotten feature of SQL Server. Will show you how quick is to make a master server and add some new target servers. If you discover an urge to go back to your shop and make a revolution - you can leave before the end - to save the world! Your world! \r\n\r\nThe pigeon says: \"coo roo-c'too-coo\"",
+      "startsAt": "2019-09-13T10:45:00",
+      "endsAt": "2019-09-13T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "dd5b4b44-e670-4e65-b3b7-9e5ce0bd5d68"
+      ],
+      "categoryItems": [
+        6591,
+        6597,
+        6601,
+        10749,
+        10750
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    },
+    {
+      "id": "117332",
+      "title": "Supercharge your Reporting Services: An essential toolkit",
+      "description": "Get the most out of your Reporting Services (SSRS) environments with this arsenal of PowerShell, SQL and admin tools. You'll leave this session knowing and controlling more about your SSRS environments than you thought possible. ",
+      "startsAt": "2019-09-13T10:45:00",
+      "endsAt": "2019-09-13T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "677db7ea-33d8-41a1-8bd2-cda13f220cff"
+      ],
+      "categoryItems": [
+        6593,
+        6594,
+        6601
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "82106",
+      "title": "Simplifying High Availability with dbatools",
+      "description": "High availability (HA) can be highly important to DBAs. Whether it be log shipping, classic mirroring or availability groups, HA can also be a pain to setup. Until now.\r\n\r\nJoin MVPs Chrissy LeMaire and Rob Sewell for this session as they demos how high availability can be simplified using dbatools, the SQL Server Community's PowerShell module.",
+      "startsAt": "2019-09-13T10:45:00",
+      "endsAt": "2019-09-13T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "cea2d426-f13c-43a1-98e7-8e5aceff0924"
+      ],
+      "categoryItems": [
+        6594,
+        6601,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "82298",
+      "title": "AI Capabilities for Power BI to make AI Accessible for Everyone",
+      "description": "Microsoft is doing a great job in enabling every user to apply Artificial intelligence in his or her daily business. Now, Microsoft has taken the next step in bringing AI to the business by implementing it in Power BI\r\n\r\nFinding insights from the data can be challenging with the massive volumes of data generated today. This is where AI can help to automatically find patterns, help users understand what the data means, and predict future outcomes. \r\n\r\nIn this session I will demonstrate how you can enable every user within your organization to apply AI to their daily business. A session with an introduction to AI and of course full of demos!",
+      "startsAt": "2019-09-13T10:45:00",
+      "endsAt": "2019-09-13T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "3150f1e6-d0a3-4b9d-8521-aae5280a5832"
+      ],
+      "categoryItems": [
+        6593,
+        6598
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "86050",
+      "title": "Perfectionism, Impostor Syndrome, Anxiety and Learning to be Kind to Yourself",
+      "description": "Working in the tech industry can sometimes make us feel inferior. It is easy to start believing that everyone knows more, or finds the work easier. When we’re surrounded by so many clever people, how can we not start to judge ourselves against them and our work against theirs?\r\nImpostor syndrome - the belief that you don’t deserve to be where you are, and perfectionism - a need to work to impossibly high standards, are exhausting.\r\nLearn how to spot these destructive thought patterns in yourself, how to manage anxiety and procrastination and how to start being kinder to yourself, because you’re awesome and you deserve to be here.",
+      "startsAt": "2019-09-13T10:45:00",
+      "endsAt": "2019-09-13T11:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "95f643c5-ca2d-4203-8f7f-82c03faaec59"
+      ],
+      "categoryItems": [
+        16791
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "116561",
+      "title": "Guillotines, Sat-Nav and the Query Optimiser",
+      "description": "What have guillotines and satellite navigation got to do with querying SQL Server? Well, in this session you’re going to find out! We’ll be looking into query performance and that means reading query plans, but in order to do that we also need some background knowledge of how the query optimiser works. With that in mind we’ll be jumping right into optimisation stages, hints and rules. We’ll also learn how to keep track and influence how the engine optimises our queries, and we’ll see if it’s a good idea or not.",
+      "startsAt": "2019-09-13T12:00:00",
+      "endsAt": "2019-09-13T13:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "10bbc397-4986-42cb-a1c8-3da96c1dfee3"
+      ],
+      "categoryItems": [
+        6601,
+        10748,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "116990",
+      "title": "Don't cross the streams! A closer look at Stream Analytics",
+      "description": "Azure is ready to recieve all your event- and devicedata for storage and analysis.\r\nBut which options in the Azure IoT portfolio should you use to recieve and manage your data?\r\n\r\nIn this session I will explain the different options in the Azure IoT portfolio, take a closer look at how they work and what this means for you.\r\nFurthermore, I will take a closer look at the Azure Stream Analytics (ASA) language. \r\nYou will learn how to develop both simple and complex ASA queries, and how to debug. \r\nWe will look at the possibilities, limitations and pitfalls in the Azure Stream Analytics language.\r\nAnd finally look at the different input and output choices and when to use which one. This includes a look at how to build a live stream dashboard with Stream Analytics data in PowerBI.\r\n\r\nThe session is based on real world project experiences and will use real world data in the demos.",
+      "startsAt": "2019-09-13T12:00:00",
+      "endsAt": "2019-09-13T13:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "dfd069f3-8bc1-49d6-aff9-f76888cafc81"
+      ],
+      "categoryItems": [
+        6592,
+        6600,
+        10748
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "82131",
+      "title": "Arguing with myself - self-service BI from an infrastructure perspective",
+      "description": "Self-service BI is coming, and as an infrastructure professional it's time to either get with the program or get run over. The infrastructure control that the IT department spent years consolidating is starting to unravel, and left to its own devices, self-service BI will spell as much technical doom as business boom. But what IS \"self-service BI\", what can it provide and why would the infrastructure people care? This session outlines how the notion of self-service BI really impacts the technical infrastructure, explains the risks of a governance disaster, and tells the story of how a Power BI implementation skirted disaster and turned into a success - all done in three different voices and from two different viewpoints.",
+      "startsAt": "2019-09-13T12:00:00",
+      "endsAt": "2019-09-13T13:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "3c2dccea-d68a-425d-ac21-4086496d06cd"
+      ],
+      "categoryItems": [
+        6593,
+        6601
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "82635",
+      "title": "It's broken, now what?! (Practical problem solving)",
+      "description": "We've all experienced weird situations in IT - things break without any real apparent reason. Sometimes, error messages can be helpful, but mostly they are cryptic and lead to no real explanations/solutions.\r\n\r\nIn this session, I will show a variety of problems that I have run into in the past and explain how I approached them. Sometimes finding simple solutions, but sometimes having to be creative and employ methods that may not be so intuitive.\r\n\r\nYou will leave the session with a better understanding on how to approach solving any technical issues you experience at work.",
+      "startsAt": "2019-09-13T12:00:00",
+      "endsAt": "2019-09-13T13:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1961f926-794a-46dd-b73a-516463f36f4e"
+      ],
+      "categoryItems": [
+        16791
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "83266",
+      "title": "\"Kubernetify\" your Containers",
+      "description": "We have all now had a play around with Docker and Containers or at least heard about them. \r\n\r\nThis demo heavy session will explain some of the challenges around managing multi container environments and how Kubernetes orchestration can help alleviate some of the pain points. \r\n\r\nThroughout, we will highlight some of the issues with getting setup and how to avoid making the same mistakes yourself.",
+      "startsAt": "2019-09-13T12:00:00",
+      "endsAt": "2019-09-13T13:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "26489750-4307-4665-91ed-6feaa4d21243"
+      ],
+      "categoryItems": [
+        6591,
+        6592,
+        6594
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    },
+    {
+      "id": "101378",
+      "title": "Exploring the SQL Tiger Team Toolbox",
+      "description": "Have you heard about the SQL Tiger Team? Do you know they provide a free set of SQL scripts to help you administer your SQL Server? In this session we explore the scripts in Tiger Team Toolbox. Can't wait for the session? Download the scripts from here. https://github.com/Microsoft/tigertoolbox",
+      "startsAt": "2019-09-13T13:45:00",
+      "endsAt": "2019-09-13T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "41a2cae9-88de-472e-a8fd-0d4105d21939"
+      ],
+      "categoryItems": [
+        6601,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "114891",
+      "title": "Pipelines and Packages: Introduction to Azure Data Factory",
+      "description": "As Data Engineers and ETL Developers, our main responsibilities are to move, transform, integrate and prepare data for our end users as quickly and efficiently as possible. With the ever-increasing volume and variety of data, this can easily start to feel like a daunting task.\r\n\r\nAzure Data Factory (ADF) is a hybrid data integration service that lets you build, orchestrate and monitor complex and scalable data pipelines - without writing any code. The first version of Azure Data Factory may not have lived entirely up to its nickname \"SSIS in the Cloud\", but the second version has been drastically improved and expanded with new capabilities.\r\n\r\nBut wait, what's that? You have already invested years and millions in a comprehensive SSIS solution, you say? No problem! You can lift and shift your existing SSIS packages into Azure Data Factory to start modernizing your solution while retaining the investments you have already made.\r\n\r\nIn this session, we will first go through the fundamentals of Azure Data Factory and see how easy it is to build new data pipelines or migrate your existing SSIS packages. Then, we will explore some of the major improvements in Azure Data Factory v2, including the new Mapping Data Flows. Finally, we will look at design patterns and best practices for development to speed up productivity while keeping costs down.",
+      "startsAt": "2019-09-13T13:45:00",
+      "endsAt": "2019-09-13T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1cd6913f-c4c1-40d2-b2b2-1aecdaddf53d"
+      ],
+      "categoryItems": [
+        6595,
+        10748,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "116268",
+      "title": "Feel Validated with dbachecks",
+      "description": "Your boss comes up to you and asks\r\n\r\n> \"Do we have backups for last night?\" \r\n> \"Did we run corruption checks?!\" \r\n> \"Do we have auto-shrink on?!!\". \r\n\r\nYou know that you do but how do you give your peace of mind to others. If only there was some sort of validation that you could do (wink wink nudge nudge). \r\n\r\nIn this session we'll go over: \r\n\r\n> how to use dbachecks to validate your instances, \r\n> run through some of the checks, \r\n> how you can share the results with others, and \r\n> how to create and run some of your own checks!",
+      "startsAt": "2019-09-13T13:45:00",
+      "endsAt": "2019-09-13T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "62e378ae-bd55-42a2-a202-9a80f4b87769"
+      ],
+      "categoryItems": [
+        6591,
+        6594,
+        6597,
+        6601,
+        10749,
+        10750
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    },
+    {
+      "id": "117227",
+      "title": "Microsoft Flow Automation using Power BI API",
+      "description": "In this session I will cover useful API operations in the Power BI API and present rich demoes on how you can use Microsoft Flow to automate Power BI tasks; Trigger a refresh of a dataset, get refresh of dataset and post to Teams and Automation of managing Premium Capacities",
+      "startsAt": "2019-09-13T13:45:00",
+      "endsAt": "2019-09-13T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "e804f4a8-e57d-4b82-8077-7b6129dc067f"
+      ],
+      "categoryItems": [
+        6593,
+        6597
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "82100",
+      "title": "Striking the right balance while staying relevant",
+      "description": "In this constantly connected world it can be hard to strike the right balance between work and home life while avoiding burn out.  It can also be massively hard to stay relevant and up to date with all things technology wise while striking that balance. \r\n\r\nIn this session I'll discuss how I strike that right balance and stay up to date with the world of IT. ",
+      "startsAt": "2019-09-13T13:45:00",
+      "endsAt": "2019-09-13T14:45:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "dfd224a3-4d3e-4699-847c-63124850fb0c"
+      ],
+      "categoryItems": [
+        16791
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "116982",
+      "title": "Taming the Beast – How a SQL DBA can keep Kerberos under control",
+      "description": "The word Kerberos can strike fear into a SQL DBA as well as many Windows Server Administrators. \r\nWhat should be a straight forward and simple process can lead to all sorts of issues and trying to resolve them can turn into a nightmare.\r\nThis talk looks at the principle of Kerberos, how it applies to SQL Server and what we need to do ensure it works",
+      "startsAt": "2019-09-13T15:00:00",
+      "endsAt": "2019-09-13T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "a94a1f0b-f8e7-44d6-86aa-68cc561ff1b6"
+      ],
+      "categoryItems": [
+        6601,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "117447",
+      "title": "ETL with Azure Databricks, The Complete Introduction",
+      "description": "Azure Databricks seems to be the new sheriff in town. It promises easy but capable ETL (amongst other things). But how does it work? For an SSIS (and possibly BIML) person this all looks new and strange. Python notebooks? Scala? Spark? What is all this, and where do I start? Well, you start by coming to this presentation. We’ll take a look at how to approach making an Azure Databricks based ETL solution from start to finish. Along the way it will become clear how Azure Databricks works and we will use our SSIS based ETL knowledge to see if it can handle the common use-cases from our daily jobs. And of course we will also have some fun and see how fast it can go!",
+      "startsAt": "2019-09-13T15:00:00",
+      "endsAt": "2019-09-13T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "95ae7d34-748e-41bb-b376-ddd890036969"
+      ],
+      "categoryItems": [
+        6595,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "117615",
+      "title": "Containers vs Clones: Database provisioning made simple",
+      "description": "Shared dev databases are the root cause of so much pain.  It's much easier to manage different concurrent streams of work if each developer has their own, isolated, dev database.\r\n\r\nHowever, provisioning dev environments is often a slow, complicated and manual process. Often devs simply don’t have the diskspace. And then there's the GDPR.\r\n\r\nYou can solve many of the these problems with virtualisation technologies like containers and clones - but there are various options and they don't all play nicely together.\r\n\r\nIn this session we'll introduce you to Docker containers, Redgate Clones and PsDatabaseClone. We'll explain the pros and cons of each technology. We'll also spend a bit of time discussing how to integrate masking rules to keep sensitive data out of the dev domain.\r\n\r\nAre you on #teamClone or #teamContainer?",
+      "startsAt": "2019-09-13T15:00:00",
+      "endsAt": "2019-09-13T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "d8263c2a-d7ec-4670-a5f0-b843706bbe57",
+        "96cd6dcf-547f-4714-8bc5-372d444f8f04"
+      ],
+      "categoryItems": [
+        6591,
+        6594,
+        6596,
+        6597,
+        10748,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "117638",
+      "title": "Shape Maps in Power BI",
+      "description": "Visualising spatial data on a map in Power BI is straightforward, but often the default map and filled map visuals have limitations that restrict their usefulness for certain types of visualisation, especially for mapping data in the UK, with geographic boundaries that the Bing Maps API (used by the Power BI maps) can't resolve.  My favoured map for visualising spatial data is the Shape Map (still in preview at time of writing) as it can be customised for specific geographical areas but it can be tricky to use effectively. This session will show how to source suitable Shape Map files, which are an industry standard in the GIS world and widely available, convert them into Power BI friendly format, and customise them to suit your needs using a selection of open source tools, and SQL Server.  In addition the session will show how to prepare the data model to effectively work with the Shape Map. Using an example data set we will bring it it all together to create a selection of interactive maps with the Shape Map visual. Attendees will leave the session with links to open source tools and other useful resources, and the skills and techniques to start using Shape Maps.\r\n",
+      "startsAt": "2019-09-13T15:00:00",
+      "endsAt": "2019-09-13T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "70746413-805b-424d-9eac-49dccfc24cc7"
+      ],
+      "categoryItems": [
+        6593
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    },
+    {
+      "id": "84263",
+      "title": "You can run SQL Server on AWS?",
+      "description": "In this session, I aim to show the different ways of running SQL Server on AWS. I will show the differences between running as a managed service (RDS) and running SQL Server on virtual machines (EC2). I will show the pros and con of both methods and I’ll also show AWS console.\r\n\r\nThis purpose of this post is to show that you do have options when it comes to the cloud. Azure is great however If you are working for a company or client already heavily invested in AWS, it may make more sense to stay there. Even if not, AWS’s SQL Server offering is mature and RDS’s features are improving all the time.\r\n",
+      "startsAt": "2019-09-13T15:00:00",
+      "endsAt": "2019-09-13T16:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "bc818456-de1d-45f4-9cfb-de3319911b0f"
+      ],
+      "categoryItems": [
+        6601,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "116626",
+      "title": "SQL Notebooks in Azure Data Studio for the DBA",
+      "description": "An Azure Data Studio recent release introduced SQL Notebooks as a capability.\r\n\r\nWhile you might have read about notebooks being used for Data Science, this session is for DBAs. You will see how you can use SQL Notebooks to simplify your work.\r\n\r\nYou will learn about SQL Notebooks from installing them in Azure Data Studio to creating a Notebook for Glenn Berry's Diagnostic queries as well as numerous use cases for you to use in your daily workload",
+      "startsAt": "2019-09-13T16:15:00",
+      "endsAt": "2019-09-13T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "29c62442-e996-43b5-a8bb-faad52be445d"
+      ],
+      "categoryItems": [
+        6596,
+        10749
+      ],
+      "questionAnswers": [],
+      "roomId": 5083
+    },
+    {
+      "id": "116678",
+      "title": "Azure Data Factory V2; The Data Flows",
+      "description": "Mapping Data Flows is the fantastic new feature of Azure Data Factory, which combines a visual designer with the full power of Databricks to deliver a robust and hugely scalable data flow pipeline, like a constantly evolving integration services cloud service. In this hands-on session we'll design and build a data transformation in the data flow designer using the new Data Factory flow user interface, and talk about the underlying architectural components.",
+      "startsAt": "2019-09-13T16:15:00",
+      "endsAt": "2019-09-13T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "957ec074-8d4c-4ab4-9aff-0765e0bf6182"
+      ],
+      "categoryItems": [
+        6597,
+        10749,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5085
+    },
+    {
+      "id": "120363",
+      "title": "When is data science the answer?",
+      "description": "All too often organisations get caught up in the hype around machine learning and data science, often getting caught up in 'me-too' projects. \r\n\r\nFor all its merits, data science isn't always the best solution to a problem. Many problems can often be solved faster, cheaper, and easier by identifying the right approach early.\r\n\r\n This session highlights methods for discovering which problems are best resolved by the skills data scientists bring to the table so that you can save the guesswork and frustration.\r\n",
+      "startsAt": "2019-09-13T16:15:00",
+      "endsAt": "2019-09-13T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "aa18dfaf-edc9-4e68-b869-7a7aef05c87f"
+      ],
+      "categoryItems": [
+        6598,
+        6599
+      ],
+      "questionAnswers": [],
+      "roomId": 5087
+    },
+    {
+      "id": "97547",
+      "title": "Python Pipeline Primer: Data Engineering with Azure DataBricks",
+      "description": "Azure DataBricks brings a Platform-as-a-Service offering of Apache Spark, which allows for blazing fast data processing, interactive querying and the hosting of machine learning models all in one place! But most of the buzz is around what it means for Data Science & AI - what about the humble data engineer who wants to harness the in-memory processing power within their ETL pipelines? How does it fit into the Modern Data Warehouse? What does data preparation look like in this new world?\r\n\r\nThis session will run through the best practices of implementing Azure DataBricks as your data ingestion, transformation and curation tool of choice. We will:\r\n\r\n\t• Introduce the Azure DataBricks service\r\n\t• Introduce Python and why it is the language of choice for Data Engineering on DataBricks\r\n\t• Discuss the various hosting & compute options available\r\n\t• Demonstrate a sample data processing task\r\n\t• Compare and contrast against alternative approaches using SSIS, U-SQL and HDInsight\r\n\t• Demonstrate how to manage and orchestrate your processing pipelines\r\n\t• Review the wider architectures and additional extension patterns\r\n\r\nThe session is aimed at Data Engineers & BI Professionals seeking to put the Azure DataBricks technology in the right context and learn how to use the service. We will not be covering the python programming language in detail.",
+      "startsAt": "2019-09-13T16:15:00",
+      "endsAt": "2019-09-13T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1d33fc9f-c15c-4cc2-886f-e522312899c6"
+      ],
+      "categoryItems": [
+        6595,
+        6598,
+        6599,
+        6600,
+        16792
+      ],
+      "questionAnswers": [],
+      "roomId": 5084
+    },
+    {
+      "id": "99699",
+      "title": "Maps in Power BI",
+      "description": "A session focusing on getting the best out of maps in Power BI. We'll look at the out of the box visuals as well as some key custom visuals such as MapBox and Icon Map. \r\n\r\nThis session will consists of back to back demos of hints and tips, showing some of the best features of each of the visuals - such as drill-down, custom background layers, data bound lines and icons, animation.",
+      "startsAt": "2019-09-13T16:15:00",
+      "endsAt": "2019-09-13T17:15:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "79c8eee3-3cc1-400e-802a-4e78b9f05ff2"
+      ],
+      "categoryItems": [
+        6593
+      ],
+      "questionAnswers": [],
+      "roomId": 5086
+    }
+  ],
+  "speakers": [
+    {
+      "id": "aa18dfaf-edc9-4e68-b869-7a7aef05c87f",
+      "firstName": "Adam",
+      "lastName": "Sroka",
+      "bio": "Adam has been working with machine learning tools and data science for over five years. He now has a passion for helping organisations make the most of their data and avoid the frustrations and pitfalls of utilising these emerging technologies.",
+      "tagLine": "Data & AI Director, Incremental Group",
+      "profilePicture": "https://sessionize.com/image?f=6843e2a50faf68c81bdebf9b78f9024f,400,400,True,False,af-edc9-4e68-b869-7a7aef05c87f.8ca7b3e3-7b8c-48da-9004-9be8582aeb5b.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://www.twitter.com/adzsroka",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        120363
+      ],
+      "fullName": "Adam Sroka",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "d8263c2a-d7ec-4670-a5f0-b843706bbe57",
+      "firstName": "Alex",
+      "lastName": "Yates",
+      "bio": "Alex loves DevOps. He also loves databases.\r\n\r\nAlex has been helping data professionals apply DevOps principles to relational database development and deployment since 2010. He's most proud of helping Skyscanner develop the ability to deploy 95 times a day. Originally for Redgate, later for DLM Consultants, Alex has worked with clients on every continent except Antarctica - so he's keen to meet anyone who researches penguins. \r\n\r\nA keen community member, he helps organise the London Continuous Delivery meetup and SQL Relay. He blogs at workingwithdevs.com, speaks wherever they'll let him and manages the DLM Digest monthly email: a report on the latest database DevOps news/tutorials.\r\n\r\nHe's quite fond of nutella. And otters. (Not together.)",
+      "tagLine": "I help orgs to not suck at delivering databases",
+      "profilePicture": "https://sessionize.com/image?f=bd6916ec5586bc8d1ac2f004809974b6,400,400,True,False,be79e79e-65d2-403a-8cee-15e502f8e4e7.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/_AlexYates_",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117615
+      ],
+      "fullName": "Alex Yates",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "3c2dccea-d68a-425d-ac21-4086496d06cd",
+      "firstName": "Alexander",
+      "lastName": "Arvidsson",
+      "bio": "Alexander is principal solutions architect at Atea in Linköping, Sweden. Nobody really knows what it means to be a principal solutions architect, but he spends his days teaching courses or helping clients of all shapes and sizes to take better care of their data. \r\nHe has spent the last 20 years toying with data, databases and related infrastructure services such as storage, networking and virtualization, occasionally emerging from the technical darkness to attend a Star Wars convention somewhere in the world.  \r\nHe is a Microsoft Data Platform MVP, frequent international speaker, podcaster, Pluralsight author, blogger and a Microsoft Certified Trainer, focusing on SQL Server, Azure and Power BI.\r\n",
+      "tagLine": "Star Wars fan extraordinaire",
+      "profilePicture": "https://sessionize.com/image?f=3cb1d423d677409ba249aebb0ddff529,400,400,True,False,ea-d68a-425d-ac21-4086496d06cd.603ae0a3-e6e0-4728-bfc4-453bcdab21cb.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/arcticdba",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82131
+      ],
+      "fullName": "Alexander Arvidsson",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "95ae7d34-748e-41bb-b376-ddd890036969",
+      "firstName": "André",
+      "lastName": "kamman",
+      "bio": "André is a DBA and SQL Server Solutions architecht for Data Masterminds. He has done a lot of DBA work on 1000’s of servers where he discovered his love for Powershell, architecting SQL Server solutions, building and tuning ETL processes (with BIML), and even implementing PDW. Having to wrangle a lot of data he's using Python and SparkSQL in Azure Databricks as well these days.\r\nAndré is a Data Platform MPV, Dutch PASS Chapter, Leader organiser of SQL Saturday Holland and Data & BI track volunteer for Techorama Holland",
+      "tagLine": "Data Platform Architect at Data Masterminds in The Netherlands",
+      "profilePicture": "https://sessionize.com/image?f=9d7dd6cbe9ea0f8ba2d5ce9c209193aa,400,400,True,False,34-748e-41bb-b376-ddd890036969.f9cb1775-ecc8-42b7-91d2-8cc0f14675a9.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/andrekamman",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117447
+      ],
+      "fullName": "André kamman",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "96cd6dcf-547f-4714-8bc5-372d444f8f04",
+      "firstName": "Andrew",
+      "lastName": "Pruski",
+      "bio": "I'm a SQL Server DBA and Microsoft Data Platform MVP, you can find me on twitter @dbafromthecold and blogging at dbafromthecold.com",
+      "tagLine": "SQL Server DBA originally from Wales but now exploring Ireland",
+      "profilePicture": "https://sessionize.com/image?f=f892f88787389e38c70190995deefff1,400,400,True,False,cf-547f-4714-8bc5-372d444f8f04.45bd99e0-5842-4e7e-b9c1-71225e3a7ee6.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/dbafromthecold",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117615
+      ],
+      "fullName": "Andrew Pruski",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1cd6913f-c4c1-40d2-b2b2-1aecdaddf53d",
+      "firstName": "Cathrine",
+      "lastName": "Wilhelmsen",
+      "bio": "Cathrine loves teaching and sharing knowledge. She works as a consultant, technical architect and developer, focusing on Data Warehouse and Business Intelligence projects. Her core skills are ETL, SSIS, Biml and T-SQL development, but she enjoys everything from programming to data visualization. Outside of work she's active in the SQL Server and PASS communities as a Microsoft Data Platform MVP, BimlHero Certified Expert, author, speaker, blogger, organizer and chronic volunteer.",
+      "tagLine": "Senior BI Consultant at Inmeta | Data Platform MVP",
+      "profilePicture": "https://sessionize.com/image?f=3596169f2a3665890fea9ac390c0510c,400,400,True,False,f08127cb-9971-4657-8707-f6d95730558c.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/cathrinew",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        114891
+      ],
+      "fullName": "Cathrine Wilhelmsen",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "26489750-4307-4665-91ed-6feaa4d21243",
+      "firstName": "Chris",
+      "lastName": "Taylor",
+      "bio": "Chris (@SQLGeordie) is a Principal Consultant working at Jarrin Consultancy providing SQL Server, Microsoft Azure and AWS consultancy to clients worldwide in a variety of industries ranging from Financial to Healthcare. He has been working with SQL Server since 2001 and during that time has become extremely strong in all areas of SQL Server but specialises in Security, System Optimisation and SQL Server Internals.",
+      "tagLine": "SQLGeordie",
+      "profilePicture": "https://sessionize.com/image?f=6af6c662ff96d62291e62338d8b52d18,400,400,True,False,50-4307-4665-91ed-6feaa4d21243.54fdc6fa-241d-46b5-b09d-94b6207803cf.JPG",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/sqlgeordie",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        83266
+      ],
+      "fullName": "Chris Taylor",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "775695c6-be3a-43a3-94f4-bdc676f2740c",
+      "firstName": "Chris",
+      "lastName": "Woolderink",
+      "bio": "Chris is an independent Power BI consultant who is specialized in DAX. As a Power BI User Group Leader in The Netherlands he likes to give back to the community by organizing or speaking at local and international Power BI events.\r\n\r\nAs a technical chef he likes to prepare a data buffet for his self service BI customers in The Netherlands. If that doesn't fulfill their needs, then serving \"a la carte\" DAX dishes is one of his specialties as well. All is not possible without combining a selection of raw data ingredients into new and innovative recipes and a kitchen equipped with the latest and greatest cookware of the Azure Data Platform.",
+      "tagLine": "Power BI consultant / Dutch PUG Leader  ",
+      "profilePicture": "https://sessionize.com/image?f=59a3e54e7e4bff03bec9ca674a5603cc,400,400,True,False,c6-be3a-43a3-94f4-bdc676f2740c.45a85a63-b416-4958-9bb6-0826d88d2eeb.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        117469
+      ],
+      "fullName": "Chris Woolderink",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "cea2d426-f13c-43a1-98e7-8e5aceff0924",
+      "firstName": "Chrissy",
+      "lastName": "LeMaire",
+      "bio": "Chrissy is a Data Platform and PowerShell MVP who has worked in IT for over 20 years. She works for General Dynamics and serves as the Automation Engineer at NATO Special Ops HQ in Belgium. She is also an avid scripter, and has used PowerShell since it was introduced in 2005 at the Microsoft Professional Conference in Los Angeles. \r\n\r\nChrissy is the creator of the popular dbatools PowerShell module for SQL Server. ",
+      "tagLine": "creator, dbatools.io",
+      "profilePicture": "https://sessionize.com/image?f=59358cdc7142642968157c7762ce74d6,400,400,True,False,db9fdd0b-5f32-44bb-92e8-17f072596f03.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/cl",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82106
+      ],
+      "fullName": "Chrissy LeMaire",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "677db7ea-33d8-41a1-8bd2-cda13f220cff",
+      "firstName": "Craig",
+      "lastName": "Porteous",
+      "bio": "Craig is a Data Platform MVP working with Incremental Group as a Data Engineer. He has more than 10 years working with the Microsoft Data Platform and related technologies, supporting global BI Environments, automating processes with PowerShell and implementing BI Solutions. Craig is actively involved in the SQL community as a co-leader of the Glasgow SQL User group & creator of the DATA:Scotland Conference in Scotland. ",
+      "tagLine": "Data Engineer | Data Platform MVP @ Incremental Group",
+      "profilePicture": "https://sessionize.com/image?f=cfe08dad8274bbc3dd3416164a4e4f14,400,400,True,False,ea-33d8-41a1-8bd2-cda13f220cff.29a0ed83-8132-45cd-a7bf-8d68018ba284.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/cporteous",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117332
+      ],
+      "fullName": "Craig Porteous",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "10bbc397-4986-42cb-a1c8-3da96c1dfee3",
+      "firstName": "David",
+      "lastName": "Alcock",
+      "bio": "David Alcock is a Developer turned DBA turned Data Professional and is the Principal Consultant for DTA IT Consultancy, a company he started to help people build and grow their data platforms",
+      "tagLine": "Principal Consultant for DTA IT Consultancy",
+      "profilePicture": "https://sessionize.com/image?f=7812743e8d16e68de18a16a205f4c9bd,400,400,True,False,e60a8039-dcb3-4167-bad6-c5a7a4e7ce2e.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/SQLSeeker77",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116561
+      ],
+      "fullName": "David Alcock",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "a94a1f0b-f8e7-44d6-86aa-68cc561ff1b6",
+      "firstName": "David",
+      "lastName": "Postlethwaite",
+      "bio": "David Postlethwaite has been a SQL Server and Oracle DBA for Liverpool Victoria in Bournemouth, England since 2008. He supports  SQL Servers from 2000 to 2017, DBMS, SSIS, SSAS, Reporting Services and Azure. \r\nBefore that he was a .NET developer and way back in history a Windows and Netware administrator.\r\nHe is an occasional blogger on www.gethynellis.com",
+      "tagLine": "SQL Server and Oracle DBA",
+      "profilePicture": "https://sessionize.com/image?f=7e3497d36e4ce78668071cbb40fd139e,400,400,True,False,0b-f8e7-44d6-86aa-68cc561ff1b6.74516bc6-1488-45e9-ac7b-2a7100393e8e.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/postledm",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116982
+      ],
+      "fullName": "David Postlethwaite",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "b64d5a6e-8a32-41fb-bfa5-a1467c5f67d0",
+      "firstName": "Enrico",
+      "lastName": "van de Laar",
+      "bio": "Enrico has been working with data in all kinds of formats and sizes for over 15 years. He is a Data & Advanced Analytics Consultant @ Dataheroes where he helps organisations take their first steps in the world of Advanced Analytics. Enrico is a Data Platform MVP since 2014 and a frequent speaker on various data related events all over the world. He authored the book “Pro SQL Server Wait Statistics” and blogs about technologies like Microsoft SQL Server and Azure Machine Learning on his blog at www.enricovandelaar.com",
+      "tagLine": "Data & Advanced Analytics Consultant @ Dataheroes",
+      "profilePicture": "https://sessionize.com/image?f=8d37eea7705943660be21da9d1a6907b,400,400,True,False,6e-8a32-41fb-bfa5-a1467c5f67d0.007778ea-9acd-4801-a451-96a6916f1e09.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://www.twitter.com/evdlaar",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82501
+      ],
+      "fullName": "Enrico van de Laar",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1d3ed1e2-e349-4b52-b90c-e6d57ca5c1d7",
+      "firstName": "esraa",
+      "lastName": "al-nashash",
+      "bio": "Esra’a Al-Nashash currently works as Azure SQL Database Engineer in Azure PaaS Microsoft Jordan. With over 6+ years of experience in SQL Server environments (administration and database development), she is a speaker for internal events at Microsoft and a publisher for technical articles in Microsoft blog. In the past, Esra’a was specialized on system development for technical systems and financial projects.",
+      "tagLine": "Microsoft - Azure SQL Database Support Engineer ",
+      "profilePicture": "https://sessionize.com/image?f=8a7f65a2f2f9acb0782eae34fd25887f,400,400,True,False,e2-e349-4b52-b90c-e6d57ca5c1d7.bb38388b-dda8-4d0e-840a-f6c575c5a39c.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        82318
+      ],
+      "fullName": "esraa al-nashash",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "6e90961f-ef22-4221-acbf-36e48f914604",
+      "firstName": "Gianluca",
+      "lastName": "Sartori",
+      "bio": "Gianluca Sartori is a Data Platform MVP, independent consultant and performance tuning specialist. He has been working in the software industry since 1999 and has been working with SQL Server ever since. He also works as a SQL Server trainer and in his spare time he writes technical articles and participates the SQL Server forums. Gianluca enjoys presenting SQL Server topics at conferences in Europe and US. He is currently working as lead DBA at a famous Formula 1 team.",
+      "tagLine": "@spaghettidba",
+      "profilePicture": "https://sessionize.com/image?f=e472869a0bc26a60eb515c66b41ce51e,400,400,True,False,c6212d94-d227-448b-8f8f-f46161331407.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/spaghettidba",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117517
+      ],
+      "fullName": "Gianluca Sartori",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "e804f4a8-e57d-4b82-8077-7b6129dc067f",
+      "firstName": "ida",
+      "lastName": "bergum",
+      "bio": "I am a Senior Analytics Consultant in Avanade Norway and a Microsoft Data Platform MVP. I have a passion for Analytics Experiences, and I am a Power BI Enthusiast. I have presented at several local and international Microsoft conferences the past two years. Sharing my knowledge with others and the community is one of the things I love about my job. ",
+      "tagLine": "Senior Analytics Consultant, Avanade and Data Platform MVP",
+      "profilePicture": "https://sessionize.com/image?f=74b7bea50538295f194fecc515126ddb,400,400,True,False,a8-e57d-4b82-8077-7b6129dc067f.bbc7aeb0-a049-4f61-bd37-1f76db392ad2.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://www.twitter.com/idabergum",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117227
+      ],
+      "fullName": "ida bergum",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "79c8eee3-3cc1-400e-802a-4e78b9f05ff2",
+      "firstName": "James",
+      "lastName": "Dales",
+      "bio": "James Dales is Microsoft Data Platform MVP and runs the Microsoft technology practice at Altius, a Microsoft Gold Partner in Data Analytics and Data Platform. He has an background in data solutions and now specialises in Azure and Power BI. James is the author of the Icon Map Power BI custom visual for Power BI.",
+      "tagLine": "Director at Altius",
+      "profilePicture": "https://sessionize.com/image?f=58edacd59b13577f47dde906a91124a0,400,400,True,False,e3-3cc1-400e-802a-4e78b9f05ff2.cb41a923-b0e7-41f8-afe1-988747a89174.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/jamesdales",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        99699
+      ],
+      "fullName": "James Dales",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "dacb6c13-e2a1-4f37-aa4a-2d3ceef99dae",
+      "firstName": "Jan",
+      "lastName": "Mulkens",
+      "bio": "Jan Mulkens is a Microsoft MVP in AI, the Competence Lead for Microsoft Advanced Analytics at Ordina Belgium and a Microsoft BI Consultant .\r\nIn his spare time, he is a speaker at conferences and user groups in europe and he organizes 2 user groups and a conference in Belgium.\r\nPower BI Days conference (www.powerbidays.com), Belgium Microsoft Advanced Analytics User Group (bit.ly/msaaug), Flemish Power BI User Group (bit.ly/FlemishPowerBI).",
+      "tagLine": "Microsoft Data Platform & BI Consultant",
+      "profilePicture": "https://sessionize.com/image?f=ffc36b40dfcf1c5c3e98291724d6a692,400,400,True,False,3523d729-d8f0-4b2f-a785-6892f431ad91.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/JanMulkens",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82085
+      ],
+      "fullName": "Jan Mulkens",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "95f643c5-ca2d-4203-8f7f-82c03faaec59",
+      "firstName": "Jo",
+      "lastName": "Franchetti",
+      "bio": "Jo is a Web Developer Advocate for Samsung Internet who is passionate about VR, Web Bluetooth, PWAs and great CSS. She’s got 6 years experience as a front end developer and has worked in various parts of the tech industry from startups, agencies, charities to large organisations. She is also mentor and organiser at codebar.io where she is able to action her passion not only for teaching good use of the web but also for improving the diversity and inclusivity of the tech industry.",
+      "tagLine": "Developer Advocate at Samsung Internet",
+      "profilePicture": "https://sessionize.com/image?f=ef10cdd7e55832192f01ef40710dc77e,400,400,True,False,98e6747a-89a9-40c9-8ebd-346b8fd31204.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/thisisjofrank",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        86050
+      ],
+      "fullName": "Jo Franchetti",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "dfd069f3-8bc1-49d6-aff9-f76888cafc81",
+      "firstName": "Johan Ludvig",
+      "lastName": "Brattås",
+      "bio": "Johan Ludvig Brattås is a managing consultant at Capgemini, and a dedicated community guy. He has worked with MS SQL server since late 1999, mostly with BI in one form or another. The last 3 years, most of his work has been in Azure working on both VMs, data lakes, PowerBI and the last year focusing on Azure IoT and Stream Analytics.\r\n\r\nCombining his passion for MS SQL Server with his passion for sharing knowledge, he started speaking at various events in the SQL Community. This is also a way to give back to the community for all the things he has learned over the years. When not working, Johan Ludvig either spends his time with his kids, playing with new technology or  teaching coeliacs how to bake glutenfree food.",
+      "tagLine": "Suffers from chronic curiosity",
+      "profilePicture": "https://sessionize.com/image?f=1cb8ef3ac9af081e8f6c29017018f13c,400,400,True,False,f3-8bc1-49d6-aff9-f76888cafc81.565264d0-6fe2-4f49-acdd-135f5d758f36.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/intoleranse",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116990
+      ],
+      "fullName": "Johan Ludvig Brattås",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "bc818456-de1d-45f4-9cfb-de3319911b0f",
+      "firstName": "John",
+      "lastName": "Mccormack",
+      "bio": "I've been working as a DBA  since 2012. I work on SQL Server, Azure SQL DB and AWS RDS as well as other cloud and big data solutions. I hold the MCSE: Data Management and Analytics and I am an AWS Certified Solutions Architect Associate.",
+      "tagLine": "DBA @ Nebula Data Solutions",
+      "profilePicture": "https://sessionize.com/image?f=8896bf29e256f308dde56924b1e6893e,400,400,True,False,56-de1d-45f4-9cfb-de3319911b0f.6c84ae87-06b4-4c09-81c9-14026bf4c37f.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/actualjohn",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        84263
+      ],
+      "fullName": "John Mccormack",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "94191e58-ec8a-4b91-a9ad-45154b3cd26d",
+      "firstName": "Jose Manuel",
+      "lastName": "Jurado Diaz",
+      "bio": "José Manuel Jurado currently works as SQL Support Escalation Engineer and Subject Matter Expert in Azure SQL Database at Microsoft Spain. With over 15+ years of experience in SQL Server environments (administration and database development), he is a speaker for internal events at Microsoft and for public events as SQL Saturday, SQL Nexus, TechReady, DotNetConference and Azure BootCamp. In the past, he worked as Project Manager for large Global Retail Company for more than 10 years developing projects using different Microsoft Technologies.",
+      "tagLine": "Microsoft",
+      "profilePicture": "https://sessionize.com/image?f=75e9a73d83d18821a5acf5e3c97f2daa,400,400,True,False,58-ec8a-4b91-a9ad-45154b3cd26d.7bf9b55f-bbff-4236-9b8a-88aa67b2acd2.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/@jmjuradodiaz",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82318
+      ],
+      "fullName": "Jose Manuel Jurado Diaz",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "3150f1e6-d0a3-4b9d-8521-aae5280a5832",
+      "firstName": "Marc",
+      "lastName": "Lelijveld",
+      "bio": "My interest in data & analytics started early. As a student, I collected a lot of data about my bike rides, cars and lots of other stuff. During my education in Business IT & Management, I learned a lot about what was called Business Intelligence. \r\n\r\nNowadays we go way beyond Business Intelligence. We can better describe it as business analytics, because it all starts at the business process to be completely clear before we can add intelligence to it.\r\n\r\nI finished my education at the company where I also started my first data & analytics job, at Centric Netherlands. There I developed my skills in Microsoft technology which resulted in an thesis about the Azure IoT suite. \r\nAfter finishing my education I developed my professional skills further and after a while switched jobs to be more focused on Microsoft technology in data & analytics. \r\n\r\nNowadays I am a professional Data & Analytics consultant with a specialization in Power BI at Macaw Netherlands. On daily bases I am working on project bases for the bigger international companies.\r\n\r\nWhat I like the most? Sharing my thoughts and enthusiasm about Power BI and related Microsoft Product. I mostly do this in public speaking for the Dutch Power BI user group, presentations at customers and end-user training. But wouldn't it be great to cross borders and also share my thoughts and experience outside the Netherlands? ",
+      "tagLine": "Data & Analytics consultant @ Macaw",
+      "profilePicture": "https://sessionize.com/image?f=0e151f67a7779c25c6deb536a1136462,400,400,True,False,e6-d0a3-4b9d-8521-aae5280a5832.a7482449-4d7d-4db3-a64f-04e4d573478b.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/marclelijveld",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82298
+      ],
+      "fullName": "Marc Lelijveld",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "41a2cae9-88de-472e-a8fd-0d4105d21939",
+      "firstName": "Mark",
+      "lastName": "Pryce-Maher",
+      "bio": "blah..blah...blah..dark side..",
+      "tagLine": "Hot Yoga Master (Not really)",
+      "profilePicture": "https://sessionize.com/image?f=ac229d22fba72eca0aa41b8e235086c4,400,400,True,False,b44d8032-0f14-40a0-9d80-592dd39de84e.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://twitter.com/tsqltidy",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        101378
+      ],
+      "fullName": "Mark Pryce-Maher",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "dd5b4b44-e670-4e65-b3b7-9e5ce0bd5d68",
+      "firstName": "Mikey",
+      "lastName": "Bronowski",
+      "bio": "What I do? I select, I select stars!\r\n\r\nData enthusiast with mathematics background in relation with SQL Server for over 10 years. Works as a database administrator (Microsoft SQL Server) responsible for environments upgrades and migrations. Holds certificates MCP, MCSE Data Platform. \r\n\r\nNot long ago Poland Data Community member, now proud Leeds Data Platform User Group active member.\r\n\r\nWhen not working or teaching learns new things or attends various data/technical conferences and meetups.\r\n\r\nItalian calcio fan and traveler.",
+      "tagLine": "I select stars from the Space.",
+      "profilePicture": "https://sessionize.com/image?f=8e2cf6cb6bfa8b9b36f984ca471c4272,400,400,True,False,44-e670-4e65-b3b7-9e5ce0bd5d68.f5fac93d-3661-415d-9826-a3c05b0f78a3.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/mikeybronowski",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        115105
+      ],
+      "fullName": "Mikey Bronowski",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "29c62442-e996-43b5-a8bb-faad52be445d",
+      "firstName": "Rob",
+      "lastName": "Sewell",
+      "bio": "Rob was once a Production SQL Server DBA but now is generally found automating the Data Platform and providing training for clients. He has a passion for PowerShell, Data and DevOps. He is an MVP, an officer for the DevOps PowerShell VG and has spoken and volunteered at many PowerShell and Data events. He is a member of the committee that organises Data In Devon and also the European PowerShell Conference. He is a proud supporter of the Data and PowerShell communities. \r\n \r\nHe relishes sharing and learning and can be found doing both via Twitter @sqldbawithbeard and his blog sqldbawithabeard.com. He spends most of his time looking at a screen and loves to solve problems. He knows that looking at a screen so much is bad for him because his wife tells him so. Thus, you can find him on the cricket field in the summer or flying a drone in the winter. \r\n \r\nHe has a fabulous beard!",
+      "tagLine": "Be-Whiskered PowerShell Ninja",
+      "profilePicture": "https://sessionize.com/image?f=664efe83cea375c8ee8d2d5aacc08b55,400,400,True,False,2983e18a-a66c-47b3-a8cd-14974dd2e26c.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/sqldbawithbeard",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116626
+      ],
+      "fullName": "Rob Sewell",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "dfd224a3-4d3e-4699-847c-63124850fb0c",
+      "firstName": "Sarah",
+      "lastName": "Lean",
+      "bio": "Sarah has over 12 years experience within the IT industry, currently she is a Cloud Solution Architect for Microsoft based in the UK.  With experience of both on premise and cloud solutions Sarah is able to understand the big picture and help businesses implement the right IT strategy for the future.  Involved in the IT community she founded the Glasgow Azure User Group in May 2017. ",
+      "tagLine": "Cloud Solution Architect with Microsoft",
+      "profilePicture": "https://sessionize.com/image?f=54644a6cbc2029513c1b2ced78497ab6,400,400,True,False,a3-4d3e-4699-847c-63124850fb0c.e8bfd47d-6c40-42c3-8d62-83e1dc051174.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://www.twitter.com/TechieLass",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82100
+      ],
+      "fullName": "Sarah Lean",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "62e378ae-bd55-42a2-a202-9a80f4b87769",
+      "firstName": "Shane",
+      "lastName": "O' Neill",
+      "bio": "Hi! I’m Shane O’Neill.\r\n\r\nI’m a SQL Server DBA and PowerShell enthusiast.\r\n\r\nI started off as a Software Support Engineer, then Junior DBA, DBA, and then realised I need less titles and more knowledge!\r\n\r\nSomewhere along the way I realised a passion for SQL Server and PowerShell; Data and Automation. Hoping to share my knowledge along my way!\r\n",
+      "tagLine": "Food, Coffee, Whiskey (not necessarily in that order)",
+      "profilePicture": "https://sessionize.com/image?f=721ec3a393f72cdfb37ea33dcba2cecd,400,400,True,False,78e4a880-48ef-449f-b264-914d6d54b4d5.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/SOZDBA",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116268
+      ],
+      "fullName": "Shane O' Neill",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1d33fc9f-c15c-4cc2-886f-e522312899c6",
+      "firstName": "Simon",
+      "lastName": "Whiteley",
+      "bio": "Coming from a world of traditional BI structures, Simon's now obsessed with utilising cloud technologies to revolutionise these traditions. Does Kimball translate to a serverless lambda architecture? Does rapidly evolving data interaction change our approaches?  Is what was right six months ago still right now?",
+      "tagLine": "Data Platform MVP. Cloud Architect, Nerd",
+      "profilePicture": "https://sessionize.com/image?f=1c9d8e0071aa6c0a87615532da4bdafa,400,400,True,False,281384a9-690c-4c02-9ac2-f263e187fea3.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/MrSiWhiteley",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        97547
+      ],
+      "fullName": "Simon Whiteley",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "70746413-805b-424d-9eac-49dccfc24cc7",
+      "firstName": "Steve",
+      "lastName": "Flynn",
+      "bio": "I've been working with Microsoft technologies for over 20 years and focusing on SQL Server and BI for the last 10.  After seven years as a BI consultant for two large consultancy firms went freelance in 2018 so I could have more control over the types of clients and projects I work with.",
+      "tagLine": "Data Agile, Owner and Principal Consultant",
+      "profilePicture": "https://sessionize.com/image?f=27159be2f74478ff81901caa86c3195c,400,400,True,False,13-805b-424d-9eac-49dccfc24cc7.84c55d03-552a-4e4e-a6de-c225baacd0d4.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/@iamdataagile",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        117638
+      ],
+      "fullName": "Steve Flynn",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "957ec074-8d4c-4ab4-9aff-0765e0bf6182",
+      "firstName": "Thomas",
+      "lastName": "Sykes",
+      "bio": "Thomas is an SQL Server consultant for Quorum Network Resources, a Microsoft Gold Data Platform Partner based in Edinburgh. An MCT and multiple MCSE his current projects include SQL Infrastructure and Performance Tuning, Azure SQL Solutions and migrations.",
+      "tagLine": "@sqltomato",
+      "profilePicture": "https://sessionize.com/image?f=f417662a93966f69974eb5bc6523739d,400,400,True,False,74-8d4c-4ab4-9aff-0765e0bf6182.45193d56-88ba-4fb0-9926-e58bcda8aa2a.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/SQLtomato",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        116678
+      ],
+      "fullName": "Thomas Sykes",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1961f926-794a-46dd-b73a-516463f36f4e",
+      "firstName": "William",
+      "lastName": "Durkin",
+      "bio": "William Durkin is a DBA and SQL Server Solutions Architect for Data Masterminds. He uses his decade of experience with SQL Server to help multinational corporations achieve their data management goals. Born in the UK and now based in Germany, William has worked as a Database Developer and DBA on projects ranging from single server installations, up to environments spanning 5 continents using a range of high availability solutions. William is a regular speaker at conferences around the globe and is the organizer of the popular DataGrillen event.",
+      "tagLine": "Data Masterminds",
+      "profilePicture": "https://sessionize.com/image?f=b914e5cfccd03e22fc12883960d134d9,400,400,True,False,26-794a-46dd-b73a-516463f36f4e.2b647566-b1de-44f2-90ba-ef9866967e4c.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/sql_williamd",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        82635
+      ],
+      "fullName": "William Durkin",
+      "categoryItems": [],
+      "questionAnswers": []
+    }
+  ],
+  "questions": [],
+  "categories": [
+    {
+      "id": 2600,
+      "title": "Tags",
+      "items": [
+        {
+          "id": 6591,
+          "name": "Microsoft Data Platform",
+          "sort": 1
+        },
+        {
+          "id": 6592,
+          "name": "Azure Data Platform",
+          "sort": 2
+        },
+        {
+          "id": 6593,
+          "name": "Business Intelligence",
+          "sort": 3
+        },
+        {
+          "id": 6594,
+          "name": "PowerShell",
+          "sort": 4
+        },
+        {
+          "id": 6595,
+          "name": "Data Warehousing",
+          "sort": 5
+        },
+        {
+          "id": 6596,
+          "name": "DevOps",
+          "sort": 6
+        },
+        {
+          "id": 6597,
+          "name": "Automation",
+          "sort": 7
+        },
+        {
+          "id": 6598,
+          "name": "AI & Machine Learning",
+          "sort": 8
+        },
+        {
+          "id": 6599,
+          "name": "Data Science",
+          "sort": 9
+        },
+        {
+          "id": 6600,
+          "name": "Big Data",
+          "sort": 10
+        },
+        {
+          "id": 6601,
+          "name": "Administration",
+          "sort": 11
+        },
+        {
+          "id": 10748,
+          "name": "Development",
+          "sort": 12
+        },
+        {
+          "id": 10749,
+          "name": "Database",
+          "sort": 13
+        },
+        {
+          "id": 10750,
+          "name": "Management",
+          "sort": 14
+        },
+        {
+          "id": 16791,
+          "name": "Professional Development",
+          "sort": 15
+        },
+        {
+          "id": 16792,
+          "name": "Cloud",
+          "sort": 16
+        },
+        {
+          "id": 16793,
+          "name": "Power BI",
+          "sort": 17
+        },
+        {
+          "id": 16797,
+          "name": "Containers",
+          "sort": 18
+        }
+      ],
+      "sort": 4
+    }
+  ],
+  "rooms": [
+    {
+      "id": 5083,
+      "name": "Level 1 Auditorium",
+      "sort": 0
+    },
+    {
+      "id": 5084,
+      "name": "Auditorium A",
+      "sort": 1
+    },
+    {
+      "id": 5085,
+      "name": "Conf Room 1",
+      "sort": 2
+    },
+    {
+      "id": 5086,
+      "name": "Conf Room 6",
+      "sort": 3
+    },
+    {
+      "id": 5087,
+      "name": "Conf Room 7",
+      "sort": 4
+    }
+  ]
+}
